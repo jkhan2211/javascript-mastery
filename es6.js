@@ -42,10 +42,41 @@ greeting('John');
 
 // default parameters
 
+const add = ( a = 2, b= 2) => console.log(a + b);
+
 // array destruction
 
+const array_1 = [ 1, 2, 3, 4];
+
+const first = array_1[0];
+const third = array_1[2];
+
+const [ first, second, third] = array_2;
+console.log(first, second, third);
+console.log(first, third);
+
 //object destruction
+const object = {
+    channelName: "Junaid Use Case",
+    views: 1500,
 
+}
+const channelName = object.channelName;
+const views = object.views
+console.log(channelName, views)
+
+const { channelName, views } = object;
 //rest operator
+const add = (...numbers) => console.log([a, b, c].reduce((a, b) => a + b, 0));
 
-// spread operator 
+add(1, 2, 3, 4, 5, 6, 7)
+
+
+// spread operator
+const array = [1, 2, 3];
+
+console.log(array[0], array[1], array[2]);
+console.log(...array);
+
+
+

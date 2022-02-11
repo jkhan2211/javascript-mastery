@@ -17,12 +17,27 @@ console.log(age)
 
 const add = (a, b) => {
     console.log(a + b);
-    
+
 
 }
 add(2, 2);
 
+const array = [ 1, 2, 3 ];
+
+array.map(n => console.log(n));
+
 // template string
+const greeting = (name) => {
+    const string = 'Hello, ' + name + "!";
+    const templateString = `Hello, ${name}!`;
+    const templateString_2 = `Hello, ${name}!`;
+
+    console.log(templateString);
+    console.log(templateString_2)
+
+}
+
+greeting('John');
 
 
 // default parameters

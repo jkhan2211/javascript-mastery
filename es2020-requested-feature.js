@@ -1,15 +1,15 @@
 // Optional Chaining
-// const user = {
-//     firstName: 'John',
-//     lastName: 'Doe',
-//     address: {
-//         city: 'NYC',
-//         street: 'Test Road',
-//         house : {
-//             number: 4,
-//         }
-//     }
-// }
+const user = {
+    firstName: 'John',
+    lastName: 'Doe',
+    address: {
+        city: 'NYC',
+        street: 'Test Road',
+        house : {
+            number: 4,
+        }
+    }
+}
 
 // console.log(user.address.house.number)
 
@@ -19,10 +19,13 @@ const user = {
     address: 'undefined'
 }
 
-user
-    && user.address
-        && user.address.house
-            && console.log(user.address.house.number);
+const searchedProperty = 'number';
+console.log(use?.address?.house?.[searchedProperty])
+
+
+
+// Optional CHAINING
+// ?. null or undefined => undefined 
 // Nullish coalescing
 // Dynamic import()
 // globalThis
